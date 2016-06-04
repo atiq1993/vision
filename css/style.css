@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,100,500,700,800);
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,300,500,700,600);
 
 html{
 	font-size: 100%;
@@ -72,18 +73,102 @@ a:hover{
 /*====== Home Section ======*/
 
 .home-section {
-	width: 100%;
-	background: url(../images/home-bg.jpg) top center fixed;
-	position: relative;
+    width: 100%;
+    background: url(../images/home-bg.jpg) top center;
+    position: relative;
+    background-size: cover;
+}
+.home-shadow {
+	background-color: rgba(231,231,231,.95); 
 }
 
 .wrapper {
-    margin: 20px 0 0 0;
+    margin: 50px 0 0 0;
 }
+
+/*====== Navigation ======*/
+
 .nav a{
-    font-family: ralway;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 500;
     text-transform: uppercase;
     color: #5e5e5e;
+}
+.nav a:hover{
+    color: #ff4949;
+    background-color: transparent !important;
+}
+.nav a:active{
+    color: #ff4949;
+    background-color: transparent !important;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+    color: #ff4949;
+    background-color: transparent !important;
+}
+
+/*====== Title Description ======*/
+
+.title-description {
+    padding: 40px 0 0 30px;
+}
+.title-description h2 {
+	font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #3A3A3A;	
+    line-height: 1.5;
+    margin-bottom: 25px
+}
+.title-description p{
+	color: #88817B;
+	margin-bottom: 45px;
+    font-size: 16px;
+    line-height: 1.9;
+}
+.about {
+    width: 200px;
+    height: 50px;
+    background: #ff4949;
+    border-radius: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 12px 0 0 0;
+    font-size: 17px;
+    font-family: 'Ralway',sans-serif;
+    font-weight: 100;
+}
+.about:hover, .about:focus {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: #f33f3f;
+}
+
+/*====== Slider ======*/
+
+.slide {
+    margin: 94px 0 0 66px;
+    top: -230px;
+}
+.carousel-indicators {
+    bottom: -60px;
+}
+.carousel-indicators li {
+    background-color: #A7A7A7;
+    width: 14px;
+    height: 14px;
+}
+
+.carousel-indicators .active {
+    background-color: #F66F71;
+    width: 16px;
+    height: 16px;
+}
+.square {
+    background-color: #F6585B;
+    height: 150px;
+    width: 150px;
+    margin: 80px 0 0 50px;
 }
